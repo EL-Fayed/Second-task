@@ -81,7 +81,7 @@ namespace Task
                             Console.Write(" ]");
                         }
                         else
-                            Console.WriteLine("The list is empty.");
+                            Console.WriteLine("The list is Empty.");
 
                         break;
                     // mean of numbers
@@ -95,7 +95,7 @@ namespace Task
                             Console.WriteLine($"The mean of numbers is : {sum / listOfNumbers.Count}");
                         }
                         else
-                            Console.WriteLine("The List is empty");
+                            Console.WriteLine("The List is Empty");
                         break;
                     // the smallest number
                     case 's':
