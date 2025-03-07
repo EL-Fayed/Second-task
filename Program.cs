@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.Design;
+using System.ComponentModel.Design;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
@@ -18,7 +18,7 @@ namespace Task
             //Q - Quit
             int number;
             char selction;
-            int min = 0; int max = 0;
+            int min, max;
             bool duplicate;
             List<int> listOfNumbers = new List<int>();
             do
@@ -89,7 +89,7 @@ namespace Task
                     case 'M':
                         if (listOfNumbers.Count > 0)
                         {
-                            int sum = 0;    
+                            int sum = 0;
                             for (int j = 0; j < listOfNumbers.Count; j++)
                                 sum += listOfNumbers[j];
                             Console.WriteLine($"The mean of numbers is : {sum / listOfNumbers.Count}");
@@ -125,6 +125,28 @@ namespace Task
                         else
                             Console.WriteLine("The List is Empty");
                         break;
+                    //Smallest and Largest Number 
+                    // case 's':
+                    // case 'S':
+                    // case 'l':
+                    // case 'L':
+                    //     if (listOfNumbers.Count > 0)
+                    //     {
+                    //         min = max = listOfNumbers[0]; 
+                    //         for (int j = 1; j < listOfNumbers.Count; j++)
+                    //             if (listOfNumbers[j] < min) 
+                    //                 min = listOfNumbers[j];
+                    //             if (listOfNumbers[j] > max) 
+                    //                 max = listOfNumbers[j];
+                    //         if (selction == 'S' || selction == 's')
+                    //             Console.WriteLine($"The Smallest number is: {min}");
+                    //         else
+                    //             Console.WriteLine($"The Largest number is: {max}");
+                    //     }
+                    //     else
+                    //         Console.WriteLine("The List is Empty");
+                    //     break;
+
                     // Sort the numbers ASC & DESC by swaping 
                     case 'g':
                     case 'G':
